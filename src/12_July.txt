@@ -1,0 +1,24 @@
+// types of components - differences 
+Function component  
+Class Component
+
+// three types of export 
+-->  by Default
+-->  by name 
+-->  by universal star *
+
+// React fragments 
+--> Its uses <></>
+--> wrapping and does not take space in the dom
+--> we cannot use any attributes inside the empty fragments  
+
+
+// Difference between  and html
+//jsx import and export 
+
+
+// Tasks for =>
+--> counter userState 
+--> CSS, jsx, fragments 
+
+

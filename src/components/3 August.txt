@@ -1,0 +1,13 @@
+=> ClassComponents = setstates = super, construcutors, how to get props
+
+
+
+
+Most important hooks 
+
+=> useState
+=> useref 
+=> useEffect 
+=> useReducer
+=> use context
+

@@ -1,0 +1,14 @@
+=> Form Validation ->  regex / usestate / onsubmit button data must be shown
+=> Counter -> usestate -> value must not be go below zero --- 
+=> Hide and Show toggle  -> component ko hide and show / component interchange / toggle component 
+
+
+
+
+1. Build one Form using Reactjs and also use useStae in 
+it and data must be shown after submitting the form 
+
+2. Create an Counter using usestate where when we 
+click the value must be change 
+
+3. Hide and show toggle using usestate/ component must interchange 

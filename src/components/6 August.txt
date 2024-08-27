@@ -1,0 +1,24 @@
+React state 
+
+=> get from react, we have to set an initial value where one is useState and another one is setState [state, setState], first state is treated like a variable and second setstate is treated like an function.
+
+- first value as a variable
+- Second value as a function call
+
+Props in React 
+
+=> parent to child data flow 
+=> we makes our component reusable using props, where we have to define the prop name to send the data example (  const newData = 'new hello world'), we can get that data in the child component as an {Parameter}, we must have to get using the {parameter} either we get error while getting it.
+
+Props Validation
+
+=> It tells us that what kind of data we can pass to child component.
+
+Basic difference of state and props
+
+=> props are immutable whereas state are not => props value can't be changed.
+=> props can pass data from one comp to another comp as an argument, but state holds the info about the comp.
+=> props can accesed inside the child component, where state can't be accessed in the child comp.
+=> * props makes the comp reuseable and state can't make it reusable
+=> props can be modified by parent comp but in state modify the values/data. 
+=> we can't change the props values in the component which we are using but in state we can change values 

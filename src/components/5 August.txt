@@ -1,0 +1,9 @@
+Revise React 
+=> Styling in React
+
+=> props  
+let str = "String";
+let num = 1234;
+
+  send these props to an child component using props, the we have to display the values using map method
+

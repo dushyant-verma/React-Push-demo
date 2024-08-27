@@ -1,0 +1,45 @@
+useEffect 
+// It takes two arguments 
+// useEffect(  ()=>{}  ,    [])
+1. fat arrow function =>() and dependency array[]
+
+It have three dependencies / conditions 
+// Empty Array state []
+// Non empty array state [state1, state2]
+// No array dependencies 
+
+    useEffect(() => {
+        console.log("use Effect called");
+        api()
+    }, [])
+
+    // In this above code there are three states 
+
+// Empty state array
+
+   useEffect(() => {
+        console.log("use Effect called");
+        api()
+    }, [])
+
+    // No array state 
+
+    useEffect(() => {
+        console.log("use Effect called");
+        api()
+    })
+
+
+// Array with states inside 
+
+useEffect(() => {
+        console.log("use Effect called");
+        api()
+    }, [setcount, state])
+
+    Todays to do list in react
+
+   
+
+
+
