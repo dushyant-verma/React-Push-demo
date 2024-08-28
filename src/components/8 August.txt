@@ -1,0 +1,10 @@
+=> Form => uncontrolled (useref) and controlled(useState)
+=> dom controls the uncontrolled components
+=> controlled are manipulated by ourseleves
+
+
+=> Events(functions) are written in CamelCase
+=> how they will call in class comp and how will be called in functional comp
+
+
+=> real dom, virtual dom and reconciltation methods (Theory Part) 

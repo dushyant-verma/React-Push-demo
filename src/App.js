@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.css'; 
 import Header from './components/Header';
 import { Body } from './components/Body';
 import { Footer } from './components/Footer';
@@ -10,6 +10,8 @@ import { HideShow } from './components/hide&show';
 import Effects from './components/Effects';
 import {TodoApp} from "./components/todo-list-app";
 import Counter from './components/ClassComponent';
+import Conditionalrendering from './components/Conditionalrendering';
+import ReactList from './components/ReactList';
 
 
 // const body = Header
@@ -35,6 +37,9 @@ function App() {
       {/* <TodoApp /> */}
       {/* <Effects/> */}
       <Counter/>
+
+      <Conditionalrendering/>
+      <ReactList/>
     </>
   );
 }

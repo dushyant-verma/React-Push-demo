@@ -1,0 +1,9 @@
+=> Git push through vs code
+=> react constructor in class component
+   - this will automatically call 
+   - states are defined in it 
+
+=> react life cycle method
+   - mount, update and unmount
+   - newprops(), setState(), forceUpdate method()
+   - forceUpdate method it focefully updates the components in class components

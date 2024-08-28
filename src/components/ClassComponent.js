@@ -8,7 +8,6 @@ class Counter extends Component {
             this.state={
                 count : 0
             }
-
             
         }
         increment = ()=>{
@@ -18,6 +17,7 @@ class Counter extends Component {
         decrement = () => {
             this.setState({count:this.state.count-1})
         }
+        
 
 render(){
     return (
