@@ -41,7 +41,7 @@ export const ClickCounter = ({name}) => {
 
         <>
             <div>This is our counter Application</div>
-            <h1>{name}</h1>
+            <h1>{name}</h1> 
             
             <div className="flex justify-center">
 

@@ -225,4 +225,12 @@
 
 
 
-// login sign up toggle 
+// Task 2 login sign up toggle 
+// Use Tailwind for styling login signup
+
+
+// Pending Topics 
+
+- Router 
+- Higher Order Components 
+- Use Refs -- hooks 

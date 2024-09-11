@@ -12,7 +12,7 @@ import {TodoApp} from "./components/todo-list-app";
 import Counter from './components/ClassComponent';
 import Conditionalrendering from './components/Conditionalrendering';
 import ReactList from './components/ReactList';
-
+import SignupToggle from './components/SignupToggle';
 
 // const body = Header
 // b()
@@ -29,17 +29,18 @@ function App() {
       {/* <NavMenu/> */}
       {/* <FormValidation/> */}
 
-      <ClickCounter name={data}/>
+      {/* <ClickCounter name={data}/>  */}
       
-      <ClickCounter name={newData}/>
+      {/* <ClickCounter name={newData}/> */}
 
-      <HideShow  randomProp={str}/>
+      {/* <HideShow  randomProp={str}/> */}
       {/* <TodoApp /> */}
       {/* <Effects/> */}
-      <Counter/>
+      {/* <Counter/> */}
 
-      <Conditionalrendering/>
-      <ReactList/>
+      {/* <Conditionalrendering/> */}
+      <SignupToggle />
+      {/* <ReactList/> */}
     </>
   );
 }
