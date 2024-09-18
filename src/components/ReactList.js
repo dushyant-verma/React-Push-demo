@@ -21,7 +21,8 @@ const ReactList = () => {
     ]
   return (
     <div>
-        <h1  className='bg-[red] text-2xl'>react list</h1>
+        <h1  className='    >Map List </h3>
+'>react list</h1>
 
         {
             data.map((item)=>(
