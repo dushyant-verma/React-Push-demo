@@ -4,12 +4,12 @@ import { useRef } from 'react'
 export default function UserefChangeColor() {
 
 
-    const setRef = useRef(initialValue)  // setting ref value 
+    const setRef = useRef(null)  // setting ref value 
     const changecolor = () => {
 
         console.log(setRef.current.value); // Consoling values
 
-        if (setRef.current.value.length < 10) {
+        if (setRef.current.value.length <= 4) {
 
             setRef.current.style.color = 'yellow'
 

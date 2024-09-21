@@ -56,8 +56,8 @@ function App() {
       {/* <CounterNew /> */}
 {/* <UseEffect/> */}
 {/* <Useref/> */}
-<UserefChangeColor />
-{/* <Usereducer/> */}
+{/* <UserefChangeColor /> */}
+<Usereducer/>
     </>
   );
 }
