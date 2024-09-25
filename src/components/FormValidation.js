@@ -36,6 +36,7 @@ export const FormValidation = () => {
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [password, setPassword] = useState('');
+    const [toggle, setToggle] = useState(true);
 
 
 
@@ -75,40 +76,78 @@ export const FormValidation = () => {
         console.log('Phone Number:', number);
         console.log('Your Password:', password);
 
+        if ( firstname && lastname && email && password && number) {
+            alert('User Signup Successfully')
+            setNumber('')
+            setFirstName('')
+            setLastName('')
+            setEmail('')
+            setPassword('')
+        } else {
+            alert('Please enter valid details')
+        }
+
+
+
 
     };
+
+
 
 
     return (
 
         <div className="form-container">
-            <h2>Input Form</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label>First Name:</label>
-                    <input type="text" value={firstname} onChange={handleFirstNameChange} />
-                </div>
-                <div className="form-group">
-                    <label>Last Name:</label>
-                    <input type="text" value={lastname} onChange={handleLastNameChange} />
-                </div>
+            {toggle == true ? (
 
-                <div className="form-group">
-                    <label>Phone Number:</label>
-                    <input type="text" value={number} onChange={handleNumberChange} />
-                </div>
-                <div className="form-group">
-                    <label>Eamil:</label>
-                    <input type="email" value={email} onChange={handleEmailChange} />
-                </div>
+                <form onSubmit={handleSubmit}>
+                    <h2>Input Form</h2>
+                    <div className="form-group">
+                        <label>First Name:</label>
+                        <input type="text" value={firstname} onChange={handleFirstNameChange} />
+                    </div>
+                    <div className="form-group">
+                        <label>Last Name:</label>
+                        <input type="text" value={lastname} onChange={handleLastNameChange} />
+                    </div>
 
-                <div className="form-group">
-                    <label>Your Password:</label>
-                    <input type="password" value={password} onChange={handlePassword} />
-                </div>
+                    <div className="form-group">
+                        <label>Phone Number:</label>
+                        <input type="text" value={number} onChange={handleNumberChange} />
+                    </div>
+                    <div className="form-group">
+                        <label>Eamil:</label>
+                        <input type="email" value={email} onChange={handleEmailChange} />
+                    </div>
 
-                <button type="submit">Submit</button>
-            </form>
+                    <div className="form-group">
+                        <label>Your Password:</label>
+                        <input type="password" value={password} onChange={handlePassword} />
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" onClick={()=>setToggle(false)} >Already have acount login here</button>
+                </form>
+
+
+            ) : (
+                <form >
+                <h2>login here </h2>
+                     
+                    <div className="form-group">
+                        <label>Phone Number:</label>
+                        <input type="text" value={number} onChange={handleNumberChange} />
+                    </div>
+                
+                    <div className="form-group">
+                        <label>Your Password:</label>
+                        <input type="password" value={password} onChange={handlePassword} />
+                    </div>
+    
+                    <button type="submit">login</button>
+                    <button type="button" onClick={()=>setToggle(true)} >Don't have acount signup here</button>
+                </form>
+           )}
         </div>
 
     )
