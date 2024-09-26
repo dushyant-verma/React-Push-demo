@@ -1,8 +1,10 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
+
 
 const UsememoHook = () => {
     const [num, setNum] = useState(0);
     const [show, setShow] = useState(true);
+    // const [result, setResult] = useState(null)
 
     const increase = () => {
         return setNum(num + 1)
@@ -19,6 +21,11 @@ const UsememoHook = () => {
     const result = useMemo(() => {
        return numCount(num)
     }, [num])
+
+    // useEffect(() => {
+    //     setResult(numCount(num))
+    // }, [num])
+    
 
     return (
         <div>
