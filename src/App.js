@@ -22,15 +22,22 @@ import Useref from './components/Useref';
 import Usereducer from './components/Usereducer';
 import UserefChangeColor from './components/UserefChangeColor';
 import UsememoHook from './components/UsememoHook';
+import { useState } from 'react';
+import Parent from './Parent';
 // const body = Header
 // b()
 // let {Body,Footer} ={ Body:Body,Footer:Footer}
+
+import { counterContext } from './context/context';
 function App() {
   const data = 'hello world'
   const newData = 'new hello world'
   const str = 'This is an String'
+
+  const [num,setNum] = useState(0)  
   return (
     <>
+    <counterContext.Provider value={num} >      
       {/* <Header/> */}
       {/* <Body/> */}
       {/* <Footer/> */}
@@ -59,7 +66,13 @@ function App() {
       {/* <UserefChangeColor /> */}
       {/* <Usereducer/> */}
       {/* <FormValidation /> */}
-      <UsememoHook />
+      {/* <UsememoHook /> */}
+
+    <button className='bg-gray-500 p-4 m-4' onClick={()=>setNum(num+1)}  >+</button>
+    <button className='bg-gray-500 p-4 m-4'  onClick={()=>setNum(num-1)} >-</button>
+
+      <Parent num={num}/>
+    </counterContext.Provider>
     </>
   );
 }
