@@ -34,45 +34,49 @@ function App() {
   const newData = 'new hello world'
   const str = 'This is an String'
 
-  const [num,setNum] = useState(0)  
+  const [num, setNum] = useState(0)
   return (
     <>
-    <counterContext.Provider value={num} >      
-      {/* <Header/> */}
-      {/* <Body/> */}
-      {/* <Footer/> */}
-      {/* <NavMenu/> */}
+      <counterContext.Provider value={num} >
+        {/* <Header/> */}
+        {/* <Body/> */}
+        {/* <Footer/> */}
+        {/* <NavMenu/> */}
 
-      {/* <ClickCounter name={data}/>  */}
+        {/* <ClickCounter name={data}/>  */}
 
-      {/* <ClickCounter name={newData}/> */}
+        {/* <ClickCounter name={newData}/> */}
 
-      {/* <HideShow  randomProp={str}/> */}
-      {/* <TodoApp /> */}
-      {/* <Effects/> */}
-      {/* <Counter/> */}
+        {/* <HideShow  randomProp={str}/> */}
+        {/* <TodoApp /> */}
+        {/* <Effects/> */}
+        {/* <Counter/> */}
 
-      {/* <Conditionalrendering/> */}
-      {/* <SignupToggle /> */}
-      {/* <MapData/> */}
+        {/* <Conditionalrendering/> */}
+        {/* <SignupToggle /> */}
+        {/* <MapData/> */}
 
-      {/* <Hooks/> */}
-      {/* <MapData /> */}
-      {/* <ReactList/> */}
-      {/* <GetInputValues /> */}
-      {/* <CounterNew /> */}
-      {/* <UseEffect/> */}
-      {/* <Useref/> */}
-      {/* <UserefChangeColor /> */}
-      {/* <Usereducer/> */}
-      {/* <FormValidation /> */}
-      {/* <UsememoHook /> */}
+        {/* <Hooks/> */}
+        {/* <MapData /> */}
+        {/* <ReactList/> */}
+        {/* <GetInputValues /> */}
+        {/* <CounterNew /> */}
+        {/* <UseEffect/> */}
+        {/* <Useref/> */}
+        {/* <UserefChangeColor /> */}
+        {/* <Usereducer/> */}
+        {/* <FormValidation /> */}
+        {/* <UsememoHook /> */}
 
-    <button className='bg-gray-500 p-4 m-4' onClick={()=>setNum(num+1)}  >+</button>
-    <button className='bg-gray-500 p-4 m-4'  onClick={()=>setNum(num-1)} >-</button>
+        {/* <button className='bg-gray-500 p-4 m-4' onClick={() => setNum(num + 1)}  >+</button>
+        <button className='bg-gray-500 p-4 m-4' onClick={() => setNum(num - 1)} >-</button> */}
 
-      <Parent num={num}/>
-    </counterContext.Provider>
+        <button onClick={() => setNum(num + 1)}>+</button>  {/* Basic Counters */}
+        <button onClick={() => setNum(num - 1)}>-</button> {/* Basic Counters */}
+
+
+        <Parent num={num} />
+      </counterContext.Provider>
     </>
   );
 }
